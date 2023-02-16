@@ -1,23 +1,296 @@
 # Don't forget to execute ./regen.py after changing this file.
 
-uart:
-  name: UART
-gcc:
-  name: GCC
-icc:
-  name: Interconnect
-gpu:
-  name: GPU
-gps:
-  name: GPS
+apcs:
+  name: APCS IPC
+audio:
+  name: Audio
+  items:
+    headset:
+      name: Headset Buttons
+    analogcodec:
+      name: Analog Codec
+    lpascodecs:
+      name: LPASS Digital Codecs (TX/RX/WSA/VA)
+    dmic:
+      name: DMIC
+    i2s:
+      name: I2S
+    spdif:
+      name: SPDiF
+    soundwire:
+      name: Soundwire
+    slimbus:
+      name: SlimBus
+    lpasslpi:
+      name: LPASS LPI pinctrl
+    adspelite:
+      name: ADSP (Elite)
+    adspaudio:
+      name: ADSP (AudioReach)
+bluetooth:
+  name: Bluetooth
+  items:
+    smd:
+      name: SMD
+    uart:
+      name: UART
+camera:
+  name: Camera
+  items:
+    csi:
+      name: CSI
+    datapath:
+      name: Data Path
+    i2c:
+      name: I2C CCI
+    vfe:
+      name: VFE
+clock:
+  name: Clocks
+  items:
+    gcc:
+      name: GCC
+    rmphcc:
+      name: RPM(h)CC
+    tcsrcc:
+      name: TCSRCC
+coresight:
+  name: Coresight Trace
+cpu:
+  name: CPU
+  items:
+    cpufreq:
+      name: CPUfreq (DVFS)
+    cpuidle:
+      name: CPUidle
+    cachetop:
+      name: Cache Topology
+    l3cache:
+      name: L3 Cache Controller
+crypto:
+  name: Crypto
+  items:
+    qcrypto:
+      name: QCrypto
+    rng:
+      name: RNG
+dcc:
+  name: DCC
+ddrfreq:
+  name: DDRfreq
 display:
   name: Display
   items:
-    dpu:
-      name: MDP/DPU
+    hdmicec:
+      name: HDMI CEC
+    hdmivideo:
+      name: HDMI Video
+    hdmiaudio:
+      name: HDMI Audio
+    lvds:
+      name: LVDS
     dsi:
       name: DSI
-    hdmi:
-      name: HDMI
     dp:
-      name: DP
+      name: DisplayPort
+    kgsl:
+      name: KGSL/GPU
+dma:
+  name: DMA
+  items:
+    gpi:
+      name: GPI
+    bam:
+      name: BAM
+ethernet:
+  name: Ethernet
+  items:
+    emac:
+      name: EMAC
+    gmac:
+      name: GMAC
+eva:
+  name: EVA
+fastrpc:
+  name: FastRPC
+gnss:
+  name: GNSS (GPS)
+hwspinlocks:
+  name: HW Spinlocks
+i2c:
+  name: I2C DMA
+interconnects:
+  name: Interconnects
+iommu:
+  name: IOMMU
+ipa:
+  name: IPA
+imem:
+  name: IMEM
+keypad:
+  name: Keypad
+ledc:
+  name: LEDC
+llcc:
+  name: LLCC
+  items:
+    scaling:
+      name: Scaling
+    bwmon:
+      name: bwmon
+mbus:
+  name: MSMBUS
+msgbox:
+  name: MsgBox
+nvmem:
+  name: NVMEM
+  items:
+    qfprom:
+      name: QFPROM
+    pmicsdram:
+      name: PMIC SDRAM
+pcie:
+  name: PCIe
+pinctrl:
+  name: Pinctrl
+pmu:
+  name: PMU
+  items:
+    armpmu:
+      name: Arm PMU
+    bwmon:
+      name: bwmon(s)
+powerthermal:
+  name: Power/Thermal
+  items:
+    currentlimit:
+      name: current-limit
+    mpm:
+      name: MPM
+    pdc:
+      name: PDC
+    spm:
+      name: SPM
+    tsens:
+      name: tsens
+pcsi:
+  name: PCSI
+pwm:
+  name: PWM
+qfprom:
+  name: QFPROM
+rt:
+  name: RT (PREEMPT_RT)
+remoteproc:
+  name: Remoteproc
+  items:
+    aipu:
+      name: AIPU
+    dsp:
+      name: DSP
+    adsp:
+      name: ADSP
+    cdsp:
+      name: CDSP
+    sdsp:
+      name: SDSP
+rng:
+  name: RNG
+rsb:
+  name: RSB
+rtc:
+  name: RTC
+security:
+  name: Security (SCM)
+sid:
+  name: SID (eFuse)
+smp:
+  name: SMP
+spi:
+  name: SPI
+  items:
+    spi:
+      name: SPI (Serial Engine)
+    qspi:
+      name: QSPI
+spmi:
+  name: SPMI
+sram:
+  name: SRAM
+storage:
+  name: Storage
+  items:
+    nand:
+      name: NAND
+    sata:
+      name: SATA
+    usd:
+      name: uSD
+    sdio:
+      name: SDIO
+    ufs:
+      name: UFS ICE
+emmc:
+  name: Storage - eMMC
+  items:
+    emmcice:
+      name: eMMC ICE
+    hs400:
+      name: HS400 enhanced strobe
+    cqe:
+      name: CQE
+timer:
+  name: Timer
+  items:
+    archtimer:
+      name: Arch Timer
+    hstimer:
+      name: HSTIMER
+    timer:
+      name: TIMER
+uart:
+  name: UART (HSUART)
+usb:
+  name: USB
+  items:
+    usb:
+      name: USB
+    usbotg:
+      name: USB OTG
+    usb3:
+      name: USB3
+    usb4:
+      name: USB4
+    hostmode:
+      name: Host Mode
+    periphmode:
+      name: Peripheral Mode
+    drd:
+      name: DRD
+typec:
+  name: USB Type-C
+  items:
+    pd:
+      name: PD
+    orientation:
+      name: Orientation
+    roleswitching:
+      name: Role Switching
+video:
+  name: Video
+  items:
+    tspp:
+      name: TSPP
+    venus:
+      name: Venus
+    videomem:
+      name: Video Memory
+watchdog:
+  name: Watchdog
+wlan:
+  name: WLAN
+  items:
+    onoff:
+      name: On/Off
+    browsing:
+      name: Browsing

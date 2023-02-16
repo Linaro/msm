@@ -1,14 +1,52 @@
 # Don't forget to execute ./regen.py after changing this file.
 
+bms:
+  name: BMS
+clkdiv:
+  name: clkdiv
+audiocodec:
+  name: Audio Codec
+coincell:
+  name: Coincell
+fuelgague:
+  name: Fuelgague
 gpio:
   name: GPIO
-mpp:
-  name: MPP
-rtc:
-  name: RTC
+haptics:
+  name: Haptics
 adc:
   name: ADC
-adc-TM:
-  name: ADC-TM
-temp-alarm:
+  items:
+    gpadc:
+      name: GPADC
+    lradc:
+      name: LRADC
+    thermal:
+      name: Thermal
+    touch:
+      name: Touch
+    iadc:
+      name: IADC
+labib:
+  name: LABIB
+lpg:
+  name: LPG
+mpp:
+  name: MPP
+pon:
+  name: PON
+qnovo:
+  name: QNovo
+regulators:
+  name: Regulators
+rtc:
+  name: RTC
+spmi:
+  name: SPMI
+tempalarm:
   name: temp-alarm
+vadc:
+  name: VADC
+wled:
+  name: WLED
+
