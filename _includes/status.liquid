@@ -1,8 +1,8 @@
 <td class="
 {%- case include.status -%}
-  {%- when "N" -%}
+  {%- when "N", "no", false -%}
     status-N
-  {%- when "next", "pending", "WIP", "wip" -%}
+  {%- when "Next", "Next-no-dts", "pending", "WIP", "wip" -%}
     status-next
   {%- when "N/A", "n/a" -%}
     status-NA
