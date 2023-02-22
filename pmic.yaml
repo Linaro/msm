@@ -2,18 +2,39 @@
 
 bms:
   name: BMS
+  items:
+    bms:
+      name: BMS
 clkdiv:
   name: clkdiv
+  items:
+    clkdiv:
+      name: clkdiv
 audiocodec:
   name: Audio Codec
+  items:
+    audiocodec:
+      name: Audio Codec
 coincell:
   name: Coincell
+  items:
+    coincell:
+      name: Coincell
 fuelgague:
   name: Fuelgague
+  items:
+    fuelgague:
+      name: Fuelgague
 gpio:
   name: GPIO
+  items:
+    gpio:
+      name: GPIO
 haptics:
   name: Haptics
+  items:
+    haptics:
+      name: Haptics
 adc:
   name: ADC
   items:
@@ -29,24 +50,57 @@ adc:
       name: IADC
 labib:
   name: LABIB
+  items:
+    lpbib:
+      name: LABIB
 lpg:
   name: LPG
+  items:
+    lpg:
+      name: LPG
 mpp:
   name: MPP
+  items:
+    mpp:
+      name: MPP
 pon:
   name: PON
+  items:
+    pon:
+      name: PON
 qnovo:
   name: QNovo
+  items:
+    qnovo:
+      name: QNovo
 regulators:
   name: Regulators
+  items:
+    regulators:
+      name: Regulators
 rtc:
   name: RTC
+  items:
+    rtc:
+      name: RTC
 spmi:
   name: SPMI
+  items: 
+    spmi:
+      name: SPMI
 tempalarm:
   name: temp-alarm
+  items:
+    tempalarm:
+      name: temp-alarm
 vadc:
   name: VADC
+  items:
+    vadc:
+      name: VDAC
 wled:
   name: WLED
+  items:
+    wled:
+      name: WLED
 

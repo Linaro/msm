@@ -1,7 +1,10 @@
 # Don't forget to execute ./regen.py after changing this file.
 
 apcs:
-  name: APCS IPC
+  name: APCS
+  items:
+    ipc:
+      name: IPC
 audio:
   name: Audio
   items:
@@ -55,7 +58,10 @@ clock:
     tcsrcc:
       name: TCSRCC
 coresight:
-  name: Coresight Trace
+  name: Coresight
+  items:
+    trace:
+      name: Trace
 cpu:
   name: CPU
   items:
@@ -76,8 +82,14 @@ crypto:
       name: RNG
 dcc:
   name: DCC
+  items:
+    dcc:
+      name: DCC
 ddrfreq:
   name: DDRfreq
+  items:
+    ddrfreq:
+      name: DDRfreq
 display:
   name: Display
   items:
@@ -111,26 +123,59 @@ ethernet:
       name: GMAC
 eva:
   name: EVA
+  items:
+    eva:
+      name: EVA
 fastrpc:
   name: FastRPC
+  items:
+    fastrpc:
+      name: FastRPC
 gnss:
-  name: GNSS (GPS)
+  name: GNSS
+  items:
+    gnssgps:
+      name: GNSS (GPS)
 hwspinlocks:
   name: HW Spinlocks
+  items:
+    spinlocks:
+      name: HW Spinlocks
 i2c:
-  name: I2C DMA
+  name: I2C
+  items:
+    i2c:
+      name: DMA
 interconnects:
   name: Interconnects
+  items:
+    interconnect:
+      name: Interconnects
 iommu:
   name: IOMMU
+  items:
+    iommu:
+      name: IOMMU
 ipa:
   name: IPA
+  items:
+    ipa:
+      name: IPA
 imem:
   name: IMEM
+  items:
+    imem:
+      name: IMEM
 keypad:
   name: Keypad
+  items:
+    keypad:
+      name: Keypad
 ledc:
   name: LEDC
+  items:
+    ledc:
+      name: LEDC
 llcc:
   name: LLCC
   items:
@@ -140,8 +185,14 @@ llcc:
       name: bwmon
 mbus:
   name: MSMBUS
+  items:
+    msmbus:
+      name: MSMBUS
 msgbox:
   name: MsgBox
+  items:
+    msgbox:
+      name: MsgBox
 nvmem:
   name: NVMEM
   items:
@@ -151,8 +202,14 @@ nvmem:
       name: PMIC SDRAM
 pcie:
   name: PCIe
+  items:
+    pcie:
+      name: PCIe
 pinctrl:
   name: Pinctrl
+  items:
+    pinctrl:
+      name: Picntrl
 pmu:
   name: PMU
   items:
@@ -175,12 +232,24 @@ powerthermal:
       name: tsens
 pcsi:
   name: PCSI
+  items:
+    pcsi:
+      name: PCSI
 pwm:
   name: PWM
+  items:
+    pwm:
+      name: PWM
 qfprom:
   name: QFPROM
+  items:
+    qfprom:
+      name: QFPROM
 rt:
-  name: RT (PREEMPT_RT)
+  name: RT
+  items:
+    repreemptrt:
+      name: PREEMPT_RT
 remoteproc:
   name: Remoteproc
   items:
@@ -196,16 +265,34 @@ remoteproc:
       name: SDSP
 rng:
   name: RNG
+  items:
+    rng:
+      name: RNG
 rsb:
   name: RSB
+  items:
+    rsb:
+      name: RSB
 rtc:
   name: RTC
+  items:
+    rtc:
+      name: RTC
 security:
-  name: Security (SCM)
+  name: Security
+  items:
+   scm:
+      name: SCM
 sid:
-  name: SID (eFuse)
+  name: SID
+  items:
+    efuse:
+      name: eFuse
 smp:
   name: SMP
+  items:
+    smp:
+      name: SMP
 spi:
   name: SPI
   items:
@@ -215,8 +302,14 @@ spi:
       name: QSPI
 spmi:
   name: SPMI
+  items:
+    spmi:
+      name: SPMI
 sram:
   name: SRAM
+  items:
+    sram:
+      name: SRAM
 storage:
   name: Storage
   items:
@@ -249,7 +342,10 @@ timer:
     timer:
       name: TIMER
 uart:
-  name: UART (HSUART)
+  name: UART
+  items:
+    hsuart:
+      name: HSUART
 usb:
   name: USB
   items:
@@ -287,6 +383,9 @@ video:
       name: Video Memory
 watchdog:
   name: Watchdog
+  items:
+    watchdog:
+      name: Watchdog
 wlan:
   name: WLAN
   items:
