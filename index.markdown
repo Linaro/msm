@@ -6,6 +6,8 @@ layout: home
 ---
 <div>
 <h2>SoC status</h2>
+<p>This table contains highlights of the features supported for each SoC.</p>
+<p>Click on the SoC link to see the full list.</p>
 <table>
 <thead>
 {% include index_soc_header.liquid %}

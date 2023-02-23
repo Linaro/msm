@@ -23,6 +23,8 @@ layout: default
 {% endfor %}
 </div>
 
+<a href="{{site.url}}{{site.baseurl}}/">Return to Home Page</a>
+
 <div class="soc-status">
 <h2>Platform status</h2>
 <table>
