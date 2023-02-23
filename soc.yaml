@@ -1,395 +1,420 @@
 # Don't forget to execute ./regen.py after changing this file.
 
-apcs:
-  name: APCS
-  items:
-    ipc:
-      name: IPC
-audio:
-  name: Audio
-  items:
-    headset:
-      name: Headset Buttons
-    analogcodec:
-      name: Analog Codec
-    lpascodecs:
-      name: LPASS Digital Codecs (TX/RX/WSA/VA)
-    dmic:
-      name: DMIC
-    i2s:
-      name: I2S
-    spdif:
-      name: SPDiF
-    soundwire:
-      name: Soundwire
-    slimbus:
-      name: SlimBus
-    lpasslpi:
-      name: LPASS LPI pinctrl
-    adspelite:
-      name: ADSP (Elite)
-    adspaudio:
-      name: ADSP (AudioReach)
-bluetooth:
-  name: Bluetooth
-  items:
-    smd:
-      name: SMD
-    uart:
-      name: UART
-camera:
-  name: Camera
-  items:
-    csi:
-      name: CSI
-    datapath:
-      name: Data Path
-    i2c:
-      name: I2C CCI
-    vfe:
-      name: VFE
 clock:
   name: Clocks
+  intop: True
   items:
     gcc:
       name: GCC
+      intop: True
     rmphcc:
       name: RPM(h)CC
+      intop: True
     tcsrcc:
       name: TCSRCC
-coresight:
-  name: Coresight
-  items:
-    trace:
-      name: Trace
-cpu:
-  name: CPU
-  items:
-    cpufreq:
-      name: CPUfreq (DVFS)
-    cpuidle:
-      name: CPUidle
-    cachetop:
-      name: Cache Topology
-    l3cache:
-      name: L3 Cache Controller
-crypto:
-  name: Crypto
-  items:
-    qcrypto:
-      name: QCrypto
-    rng:
-      name: RNG
-dcc:
-  name: DCC
-  items:
-    dcc:
-      name: DCC
-ddrfreq:
-  name: DDRfreq
-  items:
-    ddrfreq:
-      name: DDRfreq
-display:
-  name: Display
-  items:
-    hdmicec:
-      name: HDMI CEC
-    hdmivideo:
-      name: HDMI Video
-    hdmiaudio:
-      name: HDMI Audio
-    lvds:
-      name: LVDS
-    dsi:
-      name: DSI
-    dp:
-      name: DisplayPort
-    kgsl:
-      name: KGSL/GPU
-dma:
-  name: DMA
-  items:
-    gpi:
-      name: GPI
-    bam:
-      name: BAM
-ethernet:
-  name: Ethernet
-  items:
-    emac:
-      name: EMAC
-    gmac:
-      name: GMAC
-eva:
-  name: EVA
-  items:
-    eva:
-      name: EVA
-fastrpc:
-  name: FastRPC
-  items:
-    fastrpc:
-      name: FastRPC
-gnss:
-  name: GNSS
-  items:
-    gnssgps:
-      name: GNSS (GPS)
-hwspinlocks:
-  name: HW Spinlocks
-  items:
-    spinlocks:
-      name: HW Spinlocks
-i2c:
-  name: I2C
-  items:
-    i2c:
-      name: DMA
-interconnects:
-  name: Interconnects
-  items:
-    interconnect:
-      name: Interconnects
-iommu:
-  name: IOMMU
-  items:
-    iommu:
-      name: IOMMU
-ipa:
-  name: IPA
-  items:
-    ipa:
-      name: IPA
-imem:
-  name: IMEM
-  items:
-    imem:
-      name: IMEM
-keypad:
-  name: Keypad
-  items:
-    keypad:
-      name: Keypad
-ledc:
-  name: LEDC
-  items:
-    ledc:
-      name: LEDC
-llcc:
-  name: LLCC
-  items:
-    scaling:
-      name: Scaling
-    bwmon:
-      name: bwmon
-mbus:
-  name: MSMBUS
-  items:
-    msmbus:
-      name: MSMBUS
-msgbox:
-  name: MsgBox
-  items:
-    msgbox:
-      name: MsgBox
-nvmem:
-  name: NVMEM
-  items:
-    qfprom:
-      name: QFPROM
-    pmicsdram:
-      name: PMIC SDRAM
-pcie:
-  name: PCIe
-  items:
-    pcie:
-      name: PCIe
+      intop: False
 pinctrl:
   name: Pinctrl
-  items:
-    pinctrl:
-      name: Picntrl
-pmu:
-  name: PMU
-  items:
-    armpmu:
-      name: Arm PMU
-    bwmon:
-      name: bwmon(s)
-powerthermal:
-  name: Power/Thermal
-  items:
-    currentlimit:
-      name: current-limit
-    mpm:
-      name: MPM
-    pdc:
-      name: PDC
-    spm:
-      name: SPM
-    tsens:
-      name: tsens
-pcsi:
-  name: PCSI
-  items:
-    pcsi:
-      name: PCSI
-pwm:
-  name: PWM
-  items:
-    pwm:
-      name: PWM
-qfprom:
-  name: QFPROM
-  items:
-    qfprom:
-      name: QFPROM
-rt:
-  name: RT
-  items:
-    repreemptrt:
-      name: PREEMPT_RT
-remoteproc:
-  name: Remoteproc
-  items:
-    aipu:
-      name: AIPU
-    dsp:
-      name: DSP
-    adsp:
-      name: ADSP
-    cdsp:
-      name: CDSP
-    sdsp:
-      name: SDSP
-rng:
-  name: RNG
-  items:
-    rng:
-      name: RNG
-rsb:
-  name: RSB
-  items:
-    rsb:
-      name: RSB
-rtc:
-  name: RTC
-  items:
-    rtc:
-      name: RTC
-security:
-  name: Security
-  items:
-   scm:
-      name: SCM
-sid:
-  name: SID
-  items:
-    efuse:
-      name: eFuse
-smp:
-  name: SMP
-  items:
-    smp:
-      name: SMP
+  intop: True
+interconnects:
+  name: Interconnects
+  intop: True
+uart:
+  name: UART (USUART)
+  intop: True
+i2c:
+  name: I2C DMA
+  intop: True
 spi:
   name: SPI
+  intop: True
   items:
-    spi:
+    spise:
       name: SPI (Serial Engine)
+      intop: True
     qspi:
       name: QSPI
-spmi:
-  name: SPMI
-  items:
-    spmi:
-      name: SPMI
-sram:
-  name: SRAM
-  items:
-    sram:
-      name: SRAM
+      intop: True
+pcie:
+  name: PCIe
+  intop: True
+smmu:
+  name: SMMU
+  intop: True
 storage:
   name: Storage
+  intop: True
   items:
     nand:
       name: NAND
+      intop: True
     sata:
       name: SATA
-    usd:
-      name: uSD
-    sdio:
-      name: SDIO
+      intop: False
     ufs:
       name: UFS ICE
+      intop: True
 emmc:
-  name: Storage - eMMC
+  name: Storage - SD/eMMC
+  intop: True
   items:
     emmcice:
       name: eMMC ICE
+      intop: True
     hs400:
       name: HS400 enhanced strobe
+      intop: True
     cqe:
       name: CQE
-timer:
-  name: Timer
+      intop: True
+    usd:
+      name: uSD
+      intop: True
+    sdio:
+      name: SDIO
+      intop: True
+cpu:
+  name: CPU
+  intop: True
   items:
-    archtimer:
-      name: Arch Timer
-    hstimer:
-      name: HSTIMER
-    timer:
-      name: TIMER
-uart:
-  name: UART
+    cpufreq:
+      name: CPUfreq (DVFS)
+      intop: True
+    cpuidle:
+      name: CPUidle
+      intop: True
+    cachetop:
+      name: Cache Topology
+      intop: False
+    l3cache:
+      name: L3 Cache Controller
+      intop: False
+    smp:
+      name: SMP
+      intop: True
+remoteproc:
+  name: Remoteproc
+  intop: True
   items:
-    hsuart:
-      name: HSUART
-usb:
-  name: USB
+    adsp:
+      name: ADSP
+      intop: True
+    cdsp:
+      name: CDSP
+      intop: True
+    sdsp:
+      name: SDSP/SLIP
+      intop: True
+    mdsp:
+      name: MDSP
+      intop: True
+    fastrpc:
+      name: FastRPC/compute
+      intop: True
+bluetooth:
+  name: Bluetooth
+  intop: True
   items:
-    usb:
-      name: USB
-    usbotg:
-      name: USB OTG
-    usb3:
-      name: USB3
-    usb4:
-      name: USB4
-    hostmode:
-      name: Host Mode
-    periphmode:
-      name: Peripheral Mode
-    drd:
-      name: DRD
-typec:
-  name: USB Type-C
-  items:
-    pd:
-      name: PD
-    orientation:
-      name: Orientation
-    roleswitching:
-      name: Role Switching
-video:
-  name: Video
-  items:
-    tspp:
-      name: TSPP
-    venus:
-      name: Venus
-    videomem:
-      name: Video Memory
-watchdog:
-  name: Watchdog
-  items:
-    watchdog:
-      name: Watchdog
+    smd:
+      name: SMD
+      intop: True
+    uart:
+      name: UART
+      intop: True
 wlan:
   name: WLAN
+  intop: True
   items:
     onoff:
       name: On/Off
+      intop: True
     browsing:
       name: Browsing
+      intop: True
+gnss:
+  name: GNSS (GPS)
+  intop: True
+audio:
+  name: Audio
+  intop: True
+  items:
+    headset:
+      name: Headset Buttons
+      intop: True
+    analogcodec:
+      name: Analog Codec
+      intop: True
+    lpascodecs:
+      name: LPASS Digital Codecs
+      intop: False
+    dmic:
+      name: DMIC
+      intop: True
+    i2s:
+      name: I2S 
+      intop: False
+    spdif:
+      name: SPDIF
+      intop: False
+    soundwire:
+      name: Soundwire
+      intop: True
+    slimbus:
+      name: SlimBus
+      intop: False
+    lpasslpi:
+      name: LPASS LPI pinctrl
+      intop: False
+    adspelite:
+      name: ADSP (Elite)
+      intop: False
+    adspaudio:
+      name: ADSP (AudioReach)
+      intop: True
+display:
+  name: Display
+  intop: True
+  items:
+    hdmicec:
+      name: HDMI CEC
+      intop: False
+    hdmivideo:
+      name: HDMI Video
+      intop: True
+    hdmiaudio:
+      name: HDMI Audio
+      intop: False
+    lvds:
+      name: LVDS
+      intop: False
+    dsi:
+      name: DSI
+      intop: True
+    dp:
+      name: DisplayPort
+      intop: True
+    kgsl:
+      name: GPU
+      intop: True
+camera:
+  name: Camera
+  intop: True
+  items:
+    csi:
+      name: CSI
+      intop: True
+    datapath:
+      name: Data Path
+      intop: True
+    i2c:
+      name: I2C CCI
+      intop: True
+    vfe:
+      name: VFE
+      intop: True
+    vfelight:
+      name: VFE Lite
+      intop: True
+    sfe:
+      name: SFE
+      intop: True
+video:
+  name: Video
+  intop: True
+  items:
+    tspp:
+      name: TSPP
+      intop: False
+    venus:
+      name: Venus
+      intop: True
+    videomem:
+      name: Video Memory
+      intop: False
+watchdog:
+  name: Watchdog
+  intop: True
+apcs:
+  name: APCS IPC
+  intop: False
+coresight:
+  name: Coresight Trace
+  intop: False
+crypto:
+  name: Crypto
+  intop: False
+  items:
+    qcrypto:
+      name: QCrypto
+      intop: False
+    rng:
+      name: RNG
+      intop: False
+dcc:
+  name: DCC
+  intop: False
+ddrfreq:
+  name: DDRfreq
+  intop: False
+dma:
+  name: DMA
+  intop: False
+  items:
+    gpi:
+      name: GPI
+      intop: False
+    bam:
+      name: BAM
+      intop: False
+ethernet:
+  name: Ethernet
+  intop: False
+  items:
+    emac:
+      name: EMAC
+      intop: False
+    gmac:
+      name: GMAC
+      intop: False
+eva:
+  name: EVA
+  intop: False
+hwspinlocks:
+  name: HW Spinlocks
+  intop: False
+iommu:
+  name: IOMMU
+  intop: False
+ipa:
+  name: IPA
+  intop: False
+imem:
+  name: IMEM
+  intop: False
+keypad:
+  name: Keypad
+  intop: False
+llcc:
+  name: LLCC Scaling
+  intop: False
+msmbus:
+  name: MSMBUS
+  intop: False
+msgbox:
+  name: MsgBox
+  intop: False
+nvmem:
+  name: NVMEM
+  intop: False
+  items:
+    qfprom:
+      name: QFPROM
+      intop: False
+    pmicsdram:
+      name: PMIC SDRAM
+      intop: False
+pmu:
+  name: PMU
+  intop: False
+  items:
+    armpmu:
+      name: Arm PMU
+      intop: False
+    bwmon:
+      name: bwmon(s)
+      intop: False
+powerthermal:
+  name: Power/Thermal
+  intop: False
+  items:
+    currentlimit:
+      name: current-limit
+      intop: False
+    mpm:
+      name: MPM
+      intop: False
+    pdc:
+      name: PDC
+      intop: False
+    spm:
+      name: SPM
+      intop: False
+    tsens:
+      name: tsens
+      intop: False
+qfprom:
+  name: QFPROM
+  intop: False
+rt:
+  name: PREEMPT_RT
+  intop: False
+rng:
+  name: RNG
+  intop: False
+rsb:
+  name: RSB
+  intop: False
+security:
+  name: Security
+  intop: False
+sid:
+  name: SID
+  intop: False
+spmi:
+  name: SPMI
+  intop: False
+sram:
+  name: SRAM
+  intop: False
+  items:
+    sram:
+      name: SRAM
+      intop: False
+    ufsice:
+      name: UFS ICE
+      intop: False
+    sdio:
+      name: SDIO
+      intop: False
+timer:
+  name: Timer
+  intop: False
+  items:
+    archtimer:
+      name: Arch Timer
+      intop: False
+    hstimer:
+      name: HSTIMER
+      intop: False
+    timer:
+      name: TIMER
+      intop: False
+usb:
+  name: USB
+  intop: False
+  items:
+    usbotg:
+      name: USB OTG
+      intop: False
+    usb4:
+      name: USB4
+      intop: False
+    hostmode:
+      name: Host Mode
+      intop: False
+    periphmode:
+      name: Peripheral Mode
+      intop: False
+typec:
+  name: USB Type-C
+  intop: False
+  items:
+    pd:
+      name: PD
+      intop: False
+    orientation:
+      name: Orientation
+      intop: False
+    roleswitching:
+      name: Role Switching
+      intop: False
