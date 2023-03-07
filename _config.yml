@@ -47,5 +47,6 @@ collections:
     permalink: /:collection/:name
 
 exclude:
+  - vendor/
   - soc.yaml
   - pmic.yaml
