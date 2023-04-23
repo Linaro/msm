@@ -134,8 +134,12 @@ def handle_soc_pmic(data, kind, prefix):
             write_layout(out, data, 'page.' + prefix)
 
     with open('_%s.template' % kind, 'w') as out:
-        out.write(':\n'.join(sorted(generate_template(data, prefix, is_intop))))
-        out.write(':\n')
+        out.write('---\n')
+        out.write('name: ???\n')
+        out.write('layout: %s\n' % kind)
+        out.write(': N/A\n'.join(sorted(generate_template(data, prefix, is_intop))))
+        out.write(': N/A\n')
+        out.write('---\n')
 
 with open('soc.yaml', "r") as file:
     data = load(file, Loader=Loader)
