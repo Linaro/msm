@@ -13,11 +13,11 @@
 <meta property="og:url" content="/msm/soc/apq8064" />
 <meta property="og:site_name" content="Qualcomm mainline status" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-07-20T13:06:12+00:00" />
+<meta property="article:published_time" content="2023-07-20T23:01:12+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Apq8064" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-07-20T13:06:12+00:00","datePublished":"2023-07-20T13:06:12+00:00","description":"Snapdragon 400 (APQ8064)","headline":"Apq8064","mainEntityOfPage":{"@type":"WebPage","@id":"/msm/soc/apq8064"},"url":"/msm/soc/apq8064"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-07-20T23:01:12+00:00","datePublished":"2023-07-20T23:01:12+00:00","description":"Snapdragon 400 (APQ8064)","headline":"Apq8064","mainEntityOfPage":{"@type":"WebPage","@id":"/msm/soc/apq8064"},"url":"/msm/soc/apq8064"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/msm/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/msm/feed.xml" title="Qualcomm mainline status" /></head>
 <body><header class="site-header" role="banner">
@@ -90,10 +90,12 @@
 <tr><th colspan="2">Interconnects</th><td class="status-N">N</td>
 <td></td>
 </tr>
-<tr><th colspan="2">UART</th><td class="status-Y">3.16</td>
+<tr><th colspan="2">UART</th><td class="status-Y">3.16
+	<span class="tooltip">(*)<span class="tooltiptext">HS uarts are not (yet) supported</span></span></td>
 <td>HS uarts are not (yet) supported</td>
 </tr>
-<tr><th colspan="2">SPMI</th><td class="status-Y">3.16</td>
+<tr><th colspan="2">SPMI</th><td class="status-Y">3.16
+	<span class="tooltip">(*)<span class="tooltiptext">This SoC uses SSBI to communicate with PMICs</span></span></td>
 <td>This SoC uses SSBI to communicate with PMICs</td>
 </tr>
 <tr><th colspan="2">I2C</th><td class="status-Y">3.18</td>
@@ -169,10 +171,12 @@
 <td></td>
 </tr>
 <th rowspan="4">Connectivity</th>
-    <th>Bluetooth</th><td class="status-Y">4.11</td>
+    <th>Bluetooth</th><td class="status-Y">4.11
+	<span class="tooltip">(*)<span class="tooltiptext">Could not verify it</span></span></td>
 <td>Could not verify it</td>
 </tr>
-<tr><th>WLAN</th><td class="status-Y">4.11</td>
+<tr><th>WLAN</th><td class="status-Y">4.11
+	<span class="tooltip">(*)<span class="tooltiptext">Could not verify it</span></span></td>
 <td>Could not verify it</td>
 </tr>
 <tr><th>IPA</th><td class="status-NA">N/A</td>
