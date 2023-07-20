@@ -195,17 +195,16 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-td.status-Y { background-color: green; }
-
-td.status-no-dts { background-color: lightgreen; }
-
-td.status-N { background-color: red; }
-
-td.status-NA { background-color: gray; }
-
-td.status-next { background-color: yellow; }
-
-td.status-unknown { background-color: lightgray; }
+tr:nth-child(even) td.status-Y { background-color: #00a000; }
+tr:nth-child(even) td.status-N { background-color: lightcoral; }
+tr:nth-child(even) td.status-NA { background-color: darkgray; }
+tr:nth-child(even) td.status-unknown { background-color: lightgray; }
+tr td.status-Y { background-color: green; }
+tr td.status-no-dts { background-color: lightgreen; }
+tr td.status-N { background-color: red; }
+tr td.status-NA { background-color: gray; }
+tr td.status-next { background-color: yellow; }
+tr td.status-unknown { background-color: silver; }
 
 th { text-align: center; }
 
