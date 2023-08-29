@@ -20,6 +20,7 @@ bundle install
 
 - Just rebuild the data:
 ```
+./regen.py
 bundle exec jekyll build
 ```
 Now you can check the HTML data built in `./_site/`.
